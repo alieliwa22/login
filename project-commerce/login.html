@@ -13,7 +13,7 @@
   </head>
   <body>
     <main>
-      <div class="left">
+      <div class="left" id="left-section">
         <a class="btn active" id="login-btn"> Login </a>
         <a class="btn" id="register-btn"> Register </a>
       </div>
@@ -33,9 +33,13 @@
               <input type="password" placeholder="Password" name="pass" />
               <span><i class="bx bxs-lock-alt"></i></span>
             </div>
-            <a href="#">Forgot Password</a>
+            <div class="forgot">
+              <a href="#">Forgot Password</a>
+            </div>
             <div class="login-btn">
-              <button class="btn" type="submit">Log in</button>
+              <button class="btn grow_skew_backward" type="submit">
+                Log in
+              </button>
             </div>
           </form>
           <div class="login-with">
@@ -57,7 +61,7 @@
           <form method="post">
             <div class="input">
               <input type="text" name="name" placeholder="Name" />
-              <span><i class='bx bxs-user-account'></i></span>
+              <span><i class="bx bxs-user-account"></i></span>
             </div>
             <div class="input">
               <input type="email" name="email" placeholder="Email" />
@@ -69,7 +73,9 @@
             </div>
             <a href="#">Forgot Password</a>
             <div class="login-btn">
-              <button class="btn" type="submit">Log in</button>
+              <button class="btn grow_skew_backward" type="submit">
+                Log in
+              </button>
             </div>
           </form>
           <div class="login-with">

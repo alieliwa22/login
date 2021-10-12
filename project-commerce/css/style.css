@@ -70,15 +70,15 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 main .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   background: url(../assets/logincover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
 }
 .left a.btn {
   background-color: #fff;
@@ -92,12 +92,13 @@ main .left {
   margin: 0.2rem 0 0.2rem 0;
   cursor: pointer;
 }
-.left a.btn.active{
-    background-color: #FEC31F;
+.left a.btn.active {
+  background-color: #fec31f;
 }
 section.displayn {
   display: none;
 }
+
 section .right {
   padding: 10rem;
   background-color: #fefefe;
@@ -187,13 +188,14 @@ form .login-btn .btn:hover {
   background: #333;
   color: #fefefe;
 }
-form > a {
+form > .forgot {
   float: right;
   padding: 2rem 0;
   color: #000;
   text-decoration: underline;
   font-weight: 700;
 }
+
 .login-with h3 {
   margin: 0 0 2rem;
   font-size: 2rem;
@@ -211,8 +213,8 @@ form > a {
     background: url(../assets/loginsmcover.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-
     color: #fefefe;
   }
   main .left {
@@ -245,10 +247,31 @@ form > a {
   section .right form {
     width: 100%;
   }
-  form > a {
+  form .input input {
+    font-size: 1.6rem;
+  }
+  form > .forgot a {
     background-color: #fefefe;
     padding: 1rem 2rem;
     border-radius: 15px 0 15px 0;
     margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .left .btn {
+    margin: 0 0.6rem;
+  }
+  section .right {
+    padding: 2rem 1rem;
+  }
+  .content {
+    margin: 5rem auto 1rem;
+  }
+  .content h3 {
+    display: none;
+  }
+  form > .forgot {
+    text-align: center;
+    float: none;
   }
 }

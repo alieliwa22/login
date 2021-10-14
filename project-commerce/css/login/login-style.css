@@ -20,7 +20,7 @@ main .left {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: url(../assets/logincover.jpg);
+  background: url(../../assets/logincover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ form > .forgot {
     height: auto;
     display: flex;
     flex-direction: column;
-    background: url(../assets/loginsmcover.jpg);
+    background: url(../../assets/loginsmcover.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

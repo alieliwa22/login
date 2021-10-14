@@ -8,25 +8,32 @@ loginBtn.addEventListener("click", () => {
   registerSection.classList.add("displayn");
   loginBtn.classList.add("active");
   registerBtn.classList.remove("active");
+  leftSection.animate(
+    [
+      { borderRadius: "90%" },
+      { transform: "scale(0.5)" },
+      { transform: "scale(1)" },
+      { borderRadius: "0" },
+    ],
+    {
+      duration: 1000,
+    }
+  );
 });
 registerBtn.addEventListener("click", () => {
   loginSection.classList.add("displayn");
   registerSection.classList.remove("displayn");
   loginBtn.classList.remove("active");
   registerBtn.classList.add("active");
-});
-
-loginBtn.addEventListener("mouseover", () => {
-  if (window.innerWidth > 974) {
-    leftSection.animate([{ opacity: "0" }, { opacity: "1" }], {
-      duration: 6000,
-    });
-  }
-});
-registerBtn.addEventListener("mouseover", () => {
-  if (window.innerWidth > 974) {
-    leftSection.animate([{ opacity: "0" }, { opacity: "1" }], {
-      duration: 6000,
-    });
-  }
+  leftSection.animate(
+    [
+      { borderRadius: "90%" },
+      { transform: "scale(0.5)" },
+      { transform: "scale(1)" },
+      { borderRadius: "0" },
+    ],
+    {
+      duration: 1000,
+    }
+  );
 });
